@@ -5,7 +5,7 @@ CXXFLAGS	= -Wall -Wextra -Werror -std=c++17
 
 NAME		= phonebook
 
-SRCS		= Phonebook.cpp Contact.cpp
+SRCS		= PhoneBook.cpp Contact.cpp Main.cpp
 
 OBJS_DIR	= objs
 OBJS		= $(SRCS:%.cpp=$(OBJS_DIR)/%.o)
