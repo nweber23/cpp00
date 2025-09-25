@@ -20,6 +20,7 @@ int main()
 		}
 		else if (command == "EXIT")
 		{
+			std::cout << "BYE BYE" << std::endl;
 			break;
 		}
 		else
