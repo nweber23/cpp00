@@ -79,14 +79,11 @@ void PhoneBook::search_contact()
 		std::cout << "Invalid index." << std::endl;
 		return;
 	}
-
 	if (idx < 0 || idx >= size)
 	{
 		std::cout << "Index out of range." << std::endl;
 		return;
 	}
-
-	// full details
 	std::cout << "First name: " << contacts[idx].get_first_name() << std::endl;
 	std::cout << "Last name: " << contacts[idx].get_last_name() << std::endl;
 	std::cout << "Nickname: " << contacts[idx].get_nick_name() << std::endl;
