@@ -18,6 +18,9 @@ void PhoneBook::add_contact()
 	std::cout << "Enter nick name: ";
 	std::getline(std::cin, input);
 	contacts[index].set_nick_name(input);
+	std::cout << "Enter Darkest Secret: ";
+	std::getline(std::cin, input);
+	contacts[index].set_darkest_secret(input);
 	while (1)
 	{
 		std::cout << "Enter phone number: ";
@@ -87,5 +90,6 @@ void PhoneBook::search_contact()
 	std::cout << "First name: " << contacts[idx].get_first_name() << std::endl;
 	std::cout << "Last name: " << contacts[idx].get_last_name() << std::endl;
 	std::cout << "Nickname: " << contacts[idx].get_nick_name() << std::endl;
+	std::cout << "Darkest Secret: " << contacts[idx].get_darkest_secret() << std::endl;
 	std::cout << "Phone number: " << contacts[idx].get_phonenumber() << std::endl;
 }
